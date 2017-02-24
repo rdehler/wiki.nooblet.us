@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteEngine On
+RewriteRule ^(.*)$ /index.php/$1 [L,QSA]
+</IfModule>
+
